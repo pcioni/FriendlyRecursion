@@ -1,0 +1,57 @@
+add_person Alice
+add_person Bethany
+add_person Chris
+add_person Dan
+add_person Erica
+add_person Fred
+add_person Greg
+
+add_friendship Alice Bethany
+add_friendship Alice Chris
+add_friendship Bethany Erica
+add_friendship Chris Alice
+add_friendship Chris Fred
+add_friendship Dan Fred
+add_friendship Erica Bethany
+add_friendship Erica Chris
+add_friendship Erica Greg
+add_friendship Fred Greg
+add_friendship Greg Erica
+add_friendship Not Here
+add_friendship Not Erica
+
+print
+
+print_invite_list Greg 1
+print_invite_list Dan 2
+print_invite_list Erica 3
+print_invite_list Bobbert 4
+print_invite_list Bethany 10
+print_invite_list Dan 5
+
+add_message Alice "the cow jumped over the moon"
+add_message Fred "one fish two fish red fish blue fish"
+add_message Alice "hello"
+add_message Greg "Handle numbers? 0131     "
+add_message Bobbert "I'm not in this list!"
+
+print
+
+pass_messages
+print
+pass_messages
+pass_messages
+pass_messages
+pass_messages
+print
+
+add_person Alice
+
+add_friendship Alice Bethany
+add_friendship Alice Chris
+add_friendship Greg Erica
+remove_person Bethany
+remove_person Bethany
+add_person Greg
+add_friendship Greg Erica
+remove_friendship Dan Alice
